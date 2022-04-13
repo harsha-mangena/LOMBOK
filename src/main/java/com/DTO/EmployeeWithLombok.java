@@ -14,8 +14,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Data
-@AllArgsConstructor
-@RequiredArgsConstructor
 public class EmployeeWithLombok {
     //Class variables
     // @Getter
@@ -40,6 +38,14 @@ public class EmployeeWithLombok {
     // @Setter
     @NonNull
     private Float salary;
+
+    public EmployeeWithLombok(@NonNull Integer id, boolean married, @NonNull Integer experience, Long number, @NonNull Float salary) {
+        Id = id;
+        this.married = married;
+        this.experience = experience;
+        this.number = number;
+        this.salary = salary;
+    }
 
 
     //No Argument Constructor
@@ -85,8 +91,7 @@ public class EmployeeWithLombok {
         }
     }
 
-    **@Data is shortcut combination for @ToString, @Getter, @Setter, @ReqArgsConstructor
-
+    **@Data is shortcut combination for @ToString, @Getter, @Setter, @ReqArgsConstructor -> Creates for eah class variable
      */
-    
+   
 }

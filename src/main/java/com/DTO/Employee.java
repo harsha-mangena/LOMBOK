@@ -26,7 +26,7 @@ public class Employee {
     //Parameterized Constructor
     //With out lombok the class variables checking(NotNull) during assignments will be hefty 
     public Employee(Integer id, boolean married, Integer experience, Long number, Float salary) {
-        if (id == null || experience == null || number == null || salary == null || address == null)
+        if (id == null || experience == null || number == null || salary == null)
         {
             throw new NullPointerException("Please check if any or all arguments are passed are not null");
         }

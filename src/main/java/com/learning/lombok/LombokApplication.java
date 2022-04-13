@@ -12,7 +12,7 @@ public class LombokApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(LombokApplication.class, args);
 		System.out.println("With out Lombok");
-		Employee emp1 = new Employee(123, true, 1, (long) 96385274, (float)100000);
+		Employee emp1 = new Employee(123, true, 10, (long) 963827457, (float)100000);
 		System.out.println(emp1.toString());
 		
 		// System.out.println(emp1.getId());
@@ -24,7 +24,6 @@ public class LombokApplication {
 		EmployeeWithLombok employee1 = new EmployeeWithLombok(132, false, 10, (long)456231, (float)2000000);
 		System.out.println(employee1.toString());
 		//setting salary to  null
-		emp1.setSalary(null);
 
 	}
 
