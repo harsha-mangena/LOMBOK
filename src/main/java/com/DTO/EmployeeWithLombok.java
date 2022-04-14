@@ -1,41 +1,33 @@
 package com.DTO;
 
-import java.beans.JavaBean;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
-
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Data
+@NoArgsConstructor
 public class EmployeeWithLombok {
     //Class variables
-    // @Getter
-    // @Setter
     @NonNull
     private Integer Id;
 
-    // @Getter
-    // @Setter
+    @Getter
+    @Setter
     private boolean married;
 
-    // @Getter
-    // @Setter
+    @Getter
+    @Setter
     @NonNull
     private Integer experience;
 
-    // @Getter
-    // @Setter
+    @Getter
+    @Setter
     private Long number;
 
-    // @Getter
-    // @Setter
+    @Getter
+    @Setter
     @NonNull
     private Float salary;
 
